@@ -1,10 +1,10 @@
 # Inputting Variables in The Environment
 # Replace the Values with The Desired Ones
 
-subscription_id = "00dcf536-abdd-4f2c-97d0-7f932c94cf0f"
-client_id       = "b072e81d-3bc7-4af2-9d18-582d61cb3c63"
-client_secret   = "STJ8Q~8d5dTZaaijEydqiUvEnuQmNVexychZ.aXc"
-tenant_id       = "bacaa784-0995-4756-af9c-6b765e86ee72"
+subscription_id = "846252.......yewrw988376364trertewsgfsgsdgdgdsgfd"  
+client_id       = "846252.......yewrw988376364trertewsgfsgsdgdgdsgfd"
+client_secret   = "846252.......yewrw988376364trertewsgfsgsdgdgdsgfd"
+tenant_id       = "846252.......yewrw988376364trertewsgfsgsdgdgdsgfd"
 
 
 ## Best practice. 
