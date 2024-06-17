@@ -3,53 +3,51 @@
 ## Prerequisites
 #### Create The Resource Group
 
-```bash
 az login
 
-```bash
 az group create --name t2s-backend-rg --location eastus
 
 #### Create The Storage Account and Container
 
--> az storage account create --name t2sbackendstorage --resource-group t2s-backend-rg --location eastus --sku Standard_LRS
+az storage account create --name t2sbackendstorage --resource-group t2s-backend-rg --location eastus --sku Standard_LRS
 
--> STORAGE_KEY=$(az storage account keys list --resource-group t2s-backend-rg --account-name t2sbackendstorage --query '[0].value' --output tsv)
+STORAGE_KEY=$(az storage account keys list --resource-group t2s-backend-rg --account-name t2sbackendstorage --query '[0].value' --output tsv)
 
-az storage container create --name tfstate --account-name t2sbackendstorage --account-key $STORAGE_KEY
+storage container create --name tfstate --account-name t2sbackendstorage --account-key $STORAGE_KEY
 
 **In case you have issues finding your key, use the following commands**
-    --> az storage account keys list --resource-group t2s-backend-rg --account-name t2sbackendstorage
+az storage account keys list --resource-group t2s-backend-rg --account-name t2sbackendstorage
 
-    --> STORAGE_KEY=$(az storage account keys list --resource-group t2s-backend-rg --account-name t2sbackendstorage --query '[0].value' --output tsv)
+STORAGE_KEY=$(az storage account keys list --resource-group t2s-backend-rg --account-name t2sbackendstorage --query '[0].value' --output tsv)
 
 
 ## Steps 
 
 1. **Clone the repository**
 
-   -> git clone https://github.com/Here2ServeU/azure-3tier-infra-terraform.git
+git clone https://github.com/Here2ServeU/azure-3tier-infra-terraform.git
    
-   -> cd aws-autoscaling-sns-terraform
+cd aws-autoscaling-sns-terraform
 
 2. ***
 
-    -> terraform init
+terraform init
 
 3. **Review and modify variables**
 
-    -> terraform init
+terraform init
 
 4. **Plan the Deployment**
 
-    -> terraform plan
+terraform plan
 
 5. **Apply the Deployment**
 
-    -> terraform apply
+terraform apply
 
 6. **Clean up whenever necessary**
 
-    -> terraform destroy
+terraform destroy
 
 ## Security
 - Ensure to replace the values with the desired ones for the terraform.tfvars file. 
