@@ -7,8 +7,7 @@ client_secret   = "846252.......yewrw988376364trertewsgfsgsdgdgdsgfd"
 tenant_id       = "846252.......yewrw988376364trertewsgfsgsdgdgdsgfd"
 
 
-## Best practice. 
-## Use the following commands on your Local Machine. 
+## Best practice. Use the following commands on your Local Machine to input the variables in your Environment. 
 
 # export TF_VAR_subscription_id="your-subscription-id"
 # export TF_VAR_client_id="your-client-id"
