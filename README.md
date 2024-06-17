@@ -24,7 +24,7 @@ az storage container create --name tfstate --account-name t2sbackendstorage --ac
 
 1. **Clone the repository**
 
-   -> git clone https://github.com/Here2ServeU/azure-3-tier-architecture-terraform.git
+   -> git clone https://github.com/Here2ServeU/azure-3tier-infra-terraform.git
    
    -> cd aws-autoscaling-sns-terraform
 
