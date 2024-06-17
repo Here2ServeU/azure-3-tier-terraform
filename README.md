@@ -2,9 +2,12 @@
 
 ## Prerequisites
 #### Create The Resource Group
--> az login
 
--> az group create --name t2s-backend-rg --location eastus
+```bash
+az login
+
+```bash
+az group create --name t2s-backend-rg --location eastus
 
 #### Create The Storage Account and Container
 
